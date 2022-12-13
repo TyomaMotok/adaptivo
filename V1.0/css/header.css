@@ -1,0 +1,76 @@
+.header {
+    padding: 20px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    background-color: #ffdcd5;
+}
+.header__container {
+    display: flex;
+    column-gap: 60px;
+    max-width: 1260px;
+    padding: 0 15px;
+    align-items: center;
+    margin: 0 auto;
+}
+.header__logo {
+
+}
+.header__menu {
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.62;
+    flex: 1 1 auto;
+
+}
+.menu {
+}
+.menu__list {
+display: flex;
+column-gap: 40px;
+flex-wrap: wrap;
+row-gap: 10px;
+}
+.menu__item {
+}
+.header__actions  {
+    display: flex;
+    column-gap: 64px;
+    align-items: center;
+
+}
+
+.header__actions{
+    flex: 1 0 auto;
+}
+
+.button{
+    padding: 20px 40px;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border-radius: 4px;
+    color: white;
+}
+
+.header__btn {
+    /* padding: 20px 40px;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    border-radius: 4px;
+    color: white; */
+}
+
+.header__auth{
+    min-height: 18px;
+}
+
+.header__auth::before {
+    content: '';
+    width: 18px;
+    flex: 0 0 18px;
+    height: 18px;
+    background-image: url(../img/Profile.svg);
+    position: absolute;
+    margin-left: -26px;
+}

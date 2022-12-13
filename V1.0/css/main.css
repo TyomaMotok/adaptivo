@@ -1,0 +1,245 @@
+.wrapper{
+    overflow: hidden;
+}
+
+
+.main {
+    padding: 200px 0 0px 0;
+    background-color: #ffdcd5;
+    
+}
+.main__container {
+    display: flex;
+    max-width: 1260px;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-bottom: 189px;
+
+
+}
+
+.main__about{
+    padding: 20px 40px;
+    border: 1px solid #F75E05;
+    border-radius: 4px;
+    color: #F75E05;
+}
+
+.main__body {
+    flex: 1 1 69%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    max-width: 500px;
+    align-items: flex-start;
+
+}
+.main__play {
+}
+.main__play_img {
+}
+.main__title {
+font-size: 64px;
+font-weight: 900;
+line-height: 1.29;
+letter-spacing: 1px;
+text-align: left;
+
+}
+.main__buttons {
+}
+.main__about {
+}
+.main__courses {
+}
+.button {
+}
+
+
+.main__img{
+    max-width: 107.8%;
+    transform: translate(7.8%, 0);
+}
+
+
+.main__play{
+    font-size: 14px;
+    font-weight: 700;
+    /* background: url(../img/Polygon.svg) left no-repeat; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 16px;
+}
+
+.main__play::before{
+    content: '';
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+    /* background-color: #FF3F3A; */
+    background: #FF3F3A url('../img/Polygon.svg') center no-repeat ;
+    border-radius: 50%;
+}
+
+.main__play::after{
+    content: '';
+    position: absolute ;
+    width: 52px;
+    height: 52px;
+    top: 0;
+    left: 0;
+    background: #FF3F3A;
+    opacity: 0.12;
+    border-radius: 50%;
+    transform: scale(1.6);
+
+}
+
+
+
+/* ------------------------------------ */
+
+
+.circle{
+    width: 8px;
+    height: 8px;
+    background-color:#FF3F3A;
+    border-radius: 50%;
+}
+
+.main__footer {
+}
+
+.footer-main__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1260px;
+    padding: 80px 15px;
+    margin: 0 auto;
+}
+
+.footer-main {
+}
+.footer-main__item {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.footer-main__value {
+    color: #1E212C;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 1.3; /* 60/46 */
+
+}
+.footer-main__text {
+}
+
+/* ---------------------------- */
+
+@media (max-width: 1100px){
+    .main__title{
+        font-size: 50px;
+    }
+    .main__container{
+        align-items: center;
+    }
+    .main__buttons{
+        display: flex;
+        column-gap: 20px;
+        
+    }
+    .main__container{
+        margin-bottom: 20px;
+    }
+    .header__container{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 990.98px) { /* Варто вказувати саме такі значення на 0.02 меньше !!!!!! */
+    .main__container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+    }
+    .main__title{
+        text-align: center;
+    }
+    .main__buttons_main{
+        display: none;
+    }
+    .main__body{
+        max-width: 800px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .main__img_main{
+        display: none;
+    }
+    .main__play{
+    }
+    .main__play::before{
+        content: '';
+        flex: 0 0 92px;
+        width: 92px;
+        height: 92px;
+    }
+    
+    .main__play::after{
+        content: '';
+        position: absolute ;
+        width: 92px;
+        height: 92px;
+        top: 0;
+        left: 0;
+        background: #FF3F3A;
+        opacity: 0.12;
+        border-radius: 50%;
+        transform: scale(1.6);
+    
+    }
+    .main__container{
+        margin-bottom: 0;
+
+    }
+    .main__illustration-actions{
+        align-items: center;
+        display: flex;
+        column-gap: 40px;
+    }
+    .main__buttons_adaptivo{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .main__buttons_adaptivo{
+        flex-shrink: 0;
+        text-align: center;
+    }
+
+    /* FOOTER MAIN */
+    .footer-main__item{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .footer-main__text{
+        font-size: 20px;
+    }
+
+  
+}
+
+@media (min-width: 990.98px){
+    .main__buttons_adaptivo{
+        display: none;
+    }
+    .main__illustration-actions{
+        display: none;
+    }
+}
